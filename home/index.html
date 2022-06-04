@@ -36,9 +36,9 @@
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href=""><i class="layui-icon layui-icon-set"></i> 基本资料</a></dd>
-                        <dd><a href=""><i class="layui-icon layui-icon-set"></i> 更换头像</a></dd>
-                        <dd><a href=""><i class="layui-icon layui-icon-set"></i> 重置密码</a></dd>
+                        <dd><a href="../personCenter/person.html" target="fm"><i class="layui-icon layui-icon-set"></i> 基本资料</a></dd>
+                        <dd><a href="../personCenter/avatar.html" target="fm"><i class="layui-icon layui-icon-set"></i> 更换头像</a></dd>
+                        <dd><a href="../personCenter/resetpwd.html" target="fm"><i class="layui-icon layui-icon-set"></i> 重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-hide layui-show-md-inline-block">
@@ -57,7 +57,7 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test">
                     <li class="layui-nav-item layui-nav-itemed layui-this">
-                        <a class="" href="dashboard.html" target="mainfm"><span class="iconfont icon-home"></span>首页</a>
+                        <a class="" href="dashboard.html" target="fm"><span class="iconfont icon-home"></span>首页</a>
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
@@ -70,9 +70,9 @@
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-set"></i> 基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-set"></i> 更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-set"></i> 重置密码</a></dd>
+                            <dd><a href="../personCenter/person.html" target="fm"><i class="layui-icon layui-icon-set"></i> 基本资料</a></dd>
+                            <dd><a href="../personCenter/avatar.html" target="fm"><i class="layui-icon layui-icon-set"></i> 更换头像</a></dd>
+                            <dd><a href="../personCenter/resetpwd.html" target="fm"><i class="layui-icon layui-icon-set"></i> 重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <!-- <div style="padding: 15px;">内容主体区域。记得修改 layui.css 和 js 的路径</div> -->
-            <iframe src="dashboard.html" name="mainfm" frameborder="0"></iframe>
+            <iframe src="dashboard.html" name="fm" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
@@ -90,7 +90,7 @@
             @cjw_project:http://www.cjw.com
         </div>
     </div>
-    <script src="../assets/lib/layui/layui.js"></script>
+    <!-- <script src="../assets/lib/layui/layui.js"></script> -->
 
     <!-- 模版引擎 -->
     <!-- <script type="text/html" id="art_template">
@@ -100,6 +100,13 @@
     </script> -->
 
 
+    
+    <script src="../assets/lib/template-web.js"></script>
+    <script src="../assets/lib/layui/layui.js"></script>
+    <script src="../assets/lib/layui/layui.all.js"></script>
+    <script src="../assets/lib/jquery.js"></script>
+    <script src="../assets/js/baseAPI.js"></script>
+    <script src="../assets/js/index.js"></script>
     <script>
         //JS 
         layui.use(['element', 'layer', 'util'], function () {
@@ -128,11 +135,6 @@
 
         });
     </script>
-    <script src="../assets/lib/template-web.js"></script>
-    <script src="../assets/lib/layui/layui.all.js"></script>
-    <script src="../assets/lib/jquery.js"></script>
-    <script src="../assets/js/baseAPI.js"></script>
-    <script src="../assets/js/index.js"></script>
 </body>
 
 </html>
