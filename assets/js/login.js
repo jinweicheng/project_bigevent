@@ -50,7 +50,7 @@
             success: function(res) {  
                 // alert(res.message)
                 layer.msg(res.message)
-                if(res.status === 0) {
+                if(res.code === 0) {
                     console.log(res)
                     // 跳转至登录页面
                     $('.login_btn').click()
@@ -70,7 +70,7 @@
             url: '/api/login',
             data: $(this).serialize(),
             success: function(res) {
-                if(res.status === 0) {
+                if(res.code === 0) {
                     localStorage.setItem('token',res.token)
                     layer.msg(res.message)
                     // http://127.0.0.1:5500/service/26-bigEvent/home/index.html

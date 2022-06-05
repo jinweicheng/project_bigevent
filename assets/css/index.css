@@ -1,0 +1,38 @@
+.iconfont {
+    padding-right: 10px;
+}
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.layui-body {
+    overflow: hidden;
+}
+
+#userInfo img {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+#userInfo i {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+/* 清除a标签的动画 */
+a {
+    transition: none !important;
+}
